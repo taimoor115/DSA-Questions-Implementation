@@ -1,4 +1,4 @@
-package practice.dsa.LinkedList.Implementation;
+package Implementations.LinkedList.Implementation;
 
 
 public class LinkedList {

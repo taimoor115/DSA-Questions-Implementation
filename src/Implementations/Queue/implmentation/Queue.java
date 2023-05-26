@@ -1,4 +1,4 @@
-package practice.dsa.Queue.implmentation;
+package Implementations.Queue.implmentation;
 //
 //import java.util.NoSuchElementException;
 ////Implementation in LinkedList

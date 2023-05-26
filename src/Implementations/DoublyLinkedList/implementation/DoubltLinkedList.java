@@ -1,4 +1,4 @@
-package practice.dsa.DoublyLinkedList.implementation;
+package Implementations.DoublyLinkedList.implementation;
 
 class DoublyLinkedList {
     private ListNode head;

@@ -1,7 +1,5 @@
 package LinkedList.Question;
 
-import practice.dsa.LinkedList.Implementation.LinkedList;
-
 public class MergeTwoSortedList {
     public ListNode headNode;
     public ListNode mergeSortedList(ListNode a, ListNode b) {

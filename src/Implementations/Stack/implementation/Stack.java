@@ -1,4 +1,4 @@
-package practice.dsa.Stack.implementation;
+package Implementations.Stack.implementation;
 
 import java.util.EmptyStackException;
 

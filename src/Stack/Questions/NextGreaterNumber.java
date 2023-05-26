@@ -23,9 +23,4 @@ public class NextGreaterNumber {
         return result;
     }
 
-    public static void main(String[] args) {
-        NextGreaterNumber n = new NextGreaterNumber();
-        int[] arr = {4, 7, 3, 4, 8, 1};
-        System.out.println(Arrays.toString(n.nextGreaterNumber(arr)));
-    }
 }

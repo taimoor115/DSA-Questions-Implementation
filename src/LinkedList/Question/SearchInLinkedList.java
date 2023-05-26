@@ -1,7 +1,5 @@
 package LinkedList.Question;
 
-import practice.dsa.LinkedList.Implementation.LinkedList;
-
 public class SearchInLinkedList {
     private ListNode head;
     private static class ListNode {
