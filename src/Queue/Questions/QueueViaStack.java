@@ -52,5 +52,7 @@ public class QueueViaStack {
         q.deQueue();
         System.out.println(q.size());
         System.out.println(q.deQueue());
+        q.enQueue(1);
+        System.out.println(q.peek());
     }
 }
