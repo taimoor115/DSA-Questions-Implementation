@@ -1,16 +1,32 @@
 package Trees.Questions;
+import java.util.ArrayList;
+import java.util.List;
 //https://leetcode.com/problems/binary-tree-inorder-traversal/
 public class InOrderRecursive {
     TreeNode root;
 
-    public void inOrderRecursive(TreeNode root) {
-        if (root == null) { // Base Case
+    public List<Integer> inOrderRecursive(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        inOrder(root,list);
+        return list;
+    }
+    public void inOrder(TreeNode root, List<Integer> list) {
+        if(root == null) {
             return;
         }
-        inOrderRecursive(root.left);
-        System.out.print(root.data);
-        inOrderRecursive(root.right);
+        inOrder(root.left,list);
+        System.out.print(root.data + " ");
+        inOrder(root.right,list);
     }
+
+//    public void inOrderRecursive(TreeNode root) {
+//        if (root == null) { // Base Case
+//            return;
+//        }
+//        inOrderRecursive(root.left);
+//        System.out.print(root.data);
+//        inOrderRecursive(root.right);
+//    }
 
     public void createTree() {
         TreeNode first = new TreeNode(1);
