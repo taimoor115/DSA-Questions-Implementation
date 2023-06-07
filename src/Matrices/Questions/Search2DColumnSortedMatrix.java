@@ -1,33 +1,29 @@
 package Matrices.Questions;
+
 //https://leetcode.com/problems/search-a-2d-matrix/
 public class Search2DColumnSortedMatrix {
-    public void search(int[][] matrix, int n, int key) {
+    public boolean search(int[][] matrix, int target) {
+        int m = matrix.length;
+        int n = matrix[0].length;
         int i = 0;
         int j = n - 1;
-        while (i < n && j >= 0) {
-            if (matrix[i][j] == key) {
-                System.out.print("Value found at (" + i + ", " + j + ")");
-                return;
-            }
-            if (matrix[i][j] > key) {
-                j--;
-            } else {
+        while (i >= 0 && i < m && j >= 0 && j < n) {
+            if (matrix[i][j] == target) {
+                return true;
+            } else if (matrix[i][j] < target) {
                 i++;
+            } else {
+                j--;
             }
         }
-        System.out.println("Value not Found");
+        return false;
     }
 
     public static void main(String[] args) {
         Search2DColumnSortedMatrix s = new Search2DColumnSortedMatrix();
         int[][] matrix = {
-
-                {10, 20, 30, 40},
-                {15, 25, 35, 45},
-                {27, 29, 37, 48},
-                {32, 33, 39, 51}
-
+                {1, 3}
         };
-        s.search(matrix, matrix.length, 32);
+        System.out.print(s.search(matrix, 3));
     }
 }
