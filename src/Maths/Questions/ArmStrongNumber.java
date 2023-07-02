@@ -21,8 +21,17 @@ public class ArmStrongNumber {
         }
     }
 
+    public void allArmStrongNumber() {
+        for (int i = 100; i < 1000; i++) {
+            if (isArmStrong(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
         ArmStrongNumber a = new ArmStrongNumber();
         System.out.println(a.isArmStrong(153));
+        a.allArmStrongNumber();
     }
 }
