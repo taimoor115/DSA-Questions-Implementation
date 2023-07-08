@@ -1,4 +1,5 @@
 package Maths.Questions;
+
 //https://leetcode.com/problems/integer-to-roman/
 public class IntegerToRoman {
     public String intToRoman(int num) {
@@ -12,7 +13,7 @@ public class IntegerToRoman {
 
     public static void main(String[] args) {
         IntegerToRoman i = new IntegerToRoman();
-        System.out.println(i.intToRoman(2111));
+        System.out.println(i.intToRoman(21));
     }
 }
 

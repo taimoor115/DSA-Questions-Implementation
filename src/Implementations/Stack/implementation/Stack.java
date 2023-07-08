@@ -3,7 +3,7 @@ package Implementations.Stack.implementation;
 import java.util.EmptyStackException;
 
 // Linked List Implementation of Stack:
-public class Stack {
+public class Stack<c> {
     private ListNode top;
     private int length;
 
@@ -30,13 +30,13 @@ public class Stack {
     }
 
     public void push(int data) {
-       ListNode newNode = new ListNode(data);
-       if (isEmpty()) {
-           top = newNode;
-       } else {
-           newNode.next = top;
-           top = newNode;
-       }
+        ListNode newNode = new ListNode(data);
+        if (isEmpty()) {
+            top = newNode;
+        } else {
+            newNode.next = top;
+            top = newNode;
+        }
         length++;
     }
 
@@ -49,12 +49,14 @@ public class Stack {
         length--;
         return result;
     }
+
     public int peek() {
-        if(isEmpty()) {
+        if (isEmpty()) {
             throw new EmptyStackException();
         }
         return top.data;
     }
+
     public void printStack() {
         ListNode current = top;
         while (current != null) {
@@ -63,8 +65,9 @@ public class Stack {
         }
         System.out.println("Null");
     }
+
     public static void main(String[] args) {
-        Stack stack = new Stack();
+        Stack<Character> stack = new Stack<>();
         stack.push(4);
         stack.push(3);
         stack.push(2);

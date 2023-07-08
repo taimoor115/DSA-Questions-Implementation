@@ -1,5 +1,7 @@
 package Arrays.Questions;
 
+import java.util.Arrays;
+
 public class MoveZerosOnEnd {
     //Two pointer Technique
 //    public static void moveZeros(int[] arr) {
@@ -28,7 +30,6 @@ public class MoveZerosOnEnd {
             }
         }
     }
-
     public static void printArr(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < arr.length; i++) {
@@ -38,7 +39,7 @@ public class MoveZerosOnEnd {
     }
 
     public static void main(String[] args) {
-        int[] arr = {0, 1, 0, 1, 0, 2};
+        int[] arr = {0, 1, 0, 1, 0, 0};
         printArr(arr);
         moveZeroes(arr);
         printArr(arr);

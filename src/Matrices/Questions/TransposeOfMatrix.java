@@ -1,7 +1,8 @@
 package Matrices.Questions;
 
 import java.util.Scanner;
-//https://leetcode.com/problems/transpose-matrix/
+
+//https://leetcode.com/problems/transpose-matrix/d
 public class TransposeOfMatrix {
     public void createMatrix() {
         Scanner src = new Scanner(System.in);

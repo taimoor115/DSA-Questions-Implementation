@@ -29,12 +29,18 @@ public class PreOrderIterative {
         TreeNode third = new TreeNode(3);
         TreeNode forth = new TreeNode(4);
         TreeNode fifth = new TreeNode(5);
+        TreeNode six = new TreeNode(6);
+        TreeNode seven= new TreeNode(7);
+        TreeNode eight= new TreeNode(8);
 
         root = first;
         first.left = second;
         first.right = third;
         second.left = forth;
         second.right = fifth;
+        fifth.left = eight;
+        third.left = six;
+        third.left = seven;
     }
 
     public static void main(String[] args) {

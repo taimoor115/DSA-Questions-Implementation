@@ -1,6 +1,6 @@
 package Implementations.BinaryTree;
 
-public class BinaryTree {
+public class  BinaryTree {
 
     public TreeNode root;
 
@@ -31,9 +31,19 @@ public class BinaryTree {
         second.right = fifth;
     }
 
+    public void preOrder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        System.out.print(root.data + " ");
+        preOrder(root.left);
+        preOrder(root.right);
+    }
+
     public static void main(String[] args) {
         BinaryTree t = new BinaryTree();
         t.createTree();
+        t.preOrder(t.root);
 
     }
 }

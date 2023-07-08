@@ -3,8 +3,9 @@ package Queue.Questions;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
+
 //https://www.geeksforgeeks.org/interesting-method-generate-binary-numbers-1-n/
-public class  GenerateBinaryNumber1ToN{
+public class GenerateBinaryNumber1ToN {
 
     public static String[] generateBinaryNumber(int n) {
 

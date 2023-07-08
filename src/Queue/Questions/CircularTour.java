@@ -27,8 +27,8 @@ public class CircularTour {
 
     public static void main(String[] args) {
         CircularTour c = new CircularTour();
-        int[] petrol = {4,6,7,4};
-        int[] distance = {6,5,3,5};
-        System.out.println(c.tour(petrol,distance));
+        int[] petrol = {4, 6, 7, 4};
+        int[] distance = {6, 5, 3, 5};
+        System.out.println(c.tour(petrol, distance));
     }
 }

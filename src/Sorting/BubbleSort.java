@@ -1,9 +1,6 @@
 package Sorting;
-
 import java.util.Arrays;
-
 public class BubbleSort {
-
     public int[] bubbleSort(int[] arr) {
         boolean isSwapped;
         int n = arr.length;
@@ -17,7 +14,7 @@ public class BubbleSort {
                     isSwapped = true;
                 }
             }
-            if (!isSwapped) {
+            if (isSwapped == false) {
                 break;
             }
         }
@@ -26,7 +23,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         BubbleSort b = new BubbleSort();
-        int[] arr = {9,8,7,6,5,4,3,2,1};
+        int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1};
         int[] sortedArr = b.bubbleSort(arr);
         System.out.println(Arrays.toString(sortedArr));
     }

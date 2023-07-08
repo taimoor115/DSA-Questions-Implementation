@@ -1,11 +1,13 @@
 package Trees.Questions.BST;
+
 //https://leetcode.com/problems/search-in-a-binary-search-tree/
 public class SearchValueInBST {
     TreeNode root;
 
     public TreeNode searchInBST(int key) {
-        return search(root,key);
+        return search(root, key);
     }
+
     public TreeNode search(TreeNode root, int key) {
         if (root == null || root.data == key) {
             return root;

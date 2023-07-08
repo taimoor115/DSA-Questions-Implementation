@@ -1,10 +1,14 @@
 package Queue.Questions;
-import java.util.*;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 //https://practice.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1
 class ReverseFirstKElementsOfQueue {
     //Queue = {1,2,3,4,5} k = 3
     public Queue<Integer> reverse_K_Elements(Queue<Integer> q, int k) {
-        if (q.isEmpty() || k <= 0|| k > q.size()) {
+        if (q.isEmpty() || k <= 0 || k > q.size()) {
             return q;
         }
         Stack<Integer> stack = new Stack<>();
@@ -24,6 +28,7 @@ class ReverseFirstKElementsOfQueue {
         }
         return q;
     }
+
     public static void main(String[] args) {
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(1);
@@ -31,9 +36,9 @@ class ReverseFirstKElementsOfQueue {
         queue.offer(3);
         queue.offer(4);
         queue.offer(5);
-        System.out.println("Original Queue :"+ queue);
+        System.out.println("Original Queue :" + queue);
         ReverseFirstKElementsOfQueue r = new ReverseFirstKElementsOfQueue();
-        Queue<Integer> result = r.reverse_K_Elements(queue,3);
+        Queue<Integer> result = r.reverse_K_Elements(queue, 3);
         System.out.println("Reverse K Elements Queue:" + result);
     }
 }

@@ -1,10 +1,10 @@
 package Maths.Questions;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class LargerAmong3Variables {
     public static void main(String[] args) {
-
         Scanner src = new Scanner(System.in);
         System.out.print("Enter first value:");
         int a = src.nextInt();
@@ -14,11 +14,12 @@ public class LargerAmong3Variables {
         int c = src.nextInt();
         if (a > b && a > c) {
             System.out.println("First is greater");
-        } else if(b > c){
+        } else if (b > c) {
             System.out.println("Second is greater");
         } else {
             System.out.println("Third is greater");
         }
 
     }
+
 }

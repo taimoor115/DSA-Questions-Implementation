@@ -16,6 +16,6 @@ public class NumberOf1sBit {
 
     public static void main(String[] args) {
         NumberOf1sBit n = new NumberOf1sBit();
-        System.out.println(n.numberOf1bit(00000000000000000000000010000000));
+        System.out.println(n.numberOf1bit(2097152));
     }
 }

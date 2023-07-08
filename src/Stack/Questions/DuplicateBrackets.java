@@ -26,7 +26,7 @@ public class DuplicateBrackets {
 
     public static void main(String[] args) {
         DuplicateBrackets d = new DuplicateBrackets();
-        String s = "()";
+        String s = "(a+b)}";
         System.out.println(d.duplicateBracket(s));
     }
 }

@@ -1,4 +1,5 @@
 package Searching.Questions;
+
 //https://leetcode.com/problems/search-insert-position/description/
 public class SearchInsertPosition {
     public int searchInsert(int[] arr, int target) {
