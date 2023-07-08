@@ -1,4 +1,5 @@
 package Searching.Questions;
+
 //https://leetcode.com/problems/richest-customer-wealth/description/
 //1672
 public class Richest_Customer_Wealth {

@@ -43,11 +43,11 @@ public class DFS_Recursive {
     }
 
     public static void main(String[] args) {
-        DFS_Recursive r = new DFS_Recursive(5);
+        DFS_Recursive r = new DFS_Recursive(6);
         r.addEdge(0, 1);
+        r.addEdge(3, 0);
         r.addEdge(1, 2);
         r.addEdge(2, 3);
-        r.addEdge(3, 0);
         r.addEdge(2, 4);
 
         r.dfs();

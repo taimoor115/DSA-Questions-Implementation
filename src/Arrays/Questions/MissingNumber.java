@@ -24,7 +24,7 @@ public class MissingNumber {
                 return max;
             }
         }
-        return -1;
+        return arr.length;
     }
 
     public static int[] sort(int[] arr) {
@@ -57,7 +57,7 @@ public class MissingNumber {
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 5};
+        int[] arr = {1};
         missingNumber(arr);
         System.out.println(missingNumber(arr));
 //        System.out.println(Arrays.toString(arr));

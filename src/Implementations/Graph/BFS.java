@@ -56,11 +56,12 @@ public class BFS {
     }
 
     public static void main(String[] args) {
-        BFS b = new BFS(4);
+        BFS b = new BFS(5);
         b.addEdge(0, 1);
         b.addEdge(1, 2);
         b.addEdge(2, 3);
         b.addEdge(3, 0);
+        b.addEdge(2, 4);
         b.bfs(0);
     }
 }

@@ -33,7 +33,8 @@ public class Find_the_Duplicate_Number {
 
     public static void main(String[] args) {
         Find_the_Duplicate_Number f = new Find_the_Duplicate_Number();
-        int[] arr = {1, 3, 4, 2, 2};
+        int[] arr = {1, 3, 4, 2, 2,6};
         System.out.println(f.findDuplicate(arr));
+
     }
 }

@@ -26,6 +26,6 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
         PrimeNumber p = new PrimeNumber();
-        System.out.println(p.isPrime(-11));
+        System.out.println(p.isPrime(16));
     }
 }
