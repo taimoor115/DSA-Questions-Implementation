@@ -3,6 +3,7 @@ package Hashes.Questions;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+
 //https://leetcode.com/problems/two-sum/
 public class TwoSum {
 
@@ -26,6 +27,7 @@ public class TwoSum {
         TwoSum s = new TwoSum();
         int[] arr = {1, 4, 3, 2, 5, 6};
         System.out.println(Arrays.toString(s.twoSum(arr, 6)));
+
     }
 }
 //Dry Run

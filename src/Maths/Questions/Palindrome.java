@@ -1,4 +1,5 @@
 package Maths.Questions;
+
 //https://leetcode.com/problems/palindrome-number/
 //09
 public class Palindrome {

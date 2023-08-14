@@ -9,7 +9,7 @@ public class TwoSumII {
     public int[] twoSum(int[] arr, int target) {
         int[] result = new int[2];
         int left = 0;
-        int right = arr.length - 1;
+        int right = arr.length - 1; 
 
         while (left < right) {
             int sum = arr[left] + arr[right];
@@ -30,5 +30,8 @@ public class TwoSumII {
         TwoSumII s = new TwoSumII();
         int[] arr = {1, 2, 3, 4, 5, 6};
         System.out.println(Arrays.toString(s.twoSum(arr, 5)));
+
+
+        System.out.println();
     }
 }

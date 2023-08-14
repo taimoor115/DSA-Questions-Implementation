@@ -41,7 +41,7 @@ public class TwoSum {
 
     public static void main(String[] args) {
         TwoSum ts = new TwoSum();
-        int[] arr = {2, 3, 3, 5};
+        int[] arr = {3,2,4};
 //        System.out.println(Arrays.toString(ts.findPair(arr,0)));
         System.out.println(Arrays.toString(ts.findPair(arr, 6)));
     }
