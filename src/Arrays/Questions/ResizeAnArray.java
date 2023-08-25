@@ -4,9 +4,9 @@ public class ResizeAnArray {
     //Resize Method
 
     public int[] resizeArr(int[] arr, int capacity) {
-        int [] temp = new int [capacity];
+        int[] temp = new int[capacity];
         for (int i = 0; i < arr.length; i++) {
-            temp[i] = arr [i];
+            temp[i] = arr[i];
         }
         return temp;
     }
@@ -22,10 +22,10 @@ public class ResizeAnArray {
 
     public static void main(String[] args) {
         ResizeAnArray r = new ResizeAnArray();
-        int [] arr = {1,2,3,4,5};
+        int[] arr = {1, 2, 3, 4, 5};
         System.out.println(arr.length);
         r.printArr(arr);
-        arr = r.resizeArr(arr,10);
+        arr = r.resizeArr(arr, 10);
         System.out.println(arr.length);
         r.printArr(arr);
     }

@@ -2,6 +2,7 @@ package LinkedList.Question;
 
 public class MergeTwoSortedList {
     public ListNode headNode;
+
     public ListNode mergeSortedList(ListNode a, ListNode b) {
         ListNode dummy = new ListNode(0);
         ListNode tail = dummy;

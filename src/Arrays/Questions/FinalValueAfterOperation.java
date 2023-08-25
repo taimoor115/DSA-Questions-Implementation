@@ -17,7 +17,7 @@ public class FinalValueAfterOperation {
 
     public static void main(String[] args) {
         FinalValueAfterOperation f = new FinalValueAfterOperation();
-        String[] operation = {"--X","X++","X++"};
+        String[] operation = {"--X", "X++", "X++"};
         System.out.print(f.finalValueAfterOperations(operation));
     }
 }
